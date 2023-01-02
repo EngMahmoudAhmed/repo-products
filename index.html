@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-75 mx-auto py-4">
+
+        <label for="productName">productName</label>
+        <input type="text" class="my-2 form-control" id="productName">
+
+        <label for="productPrice">productPrice</label>
+        <input type="number" class="my-2 form-control" id="productPrice">
+
+        <label for="productCategory">productCategory</label>
+        <input type="text" class="my-2 form-control" id="productCategory">
+
+        <label for="productDesc">productDesc</label>
+        <textarea type="text" class="my-2 form-control" id="productDesc"></textarea>
+
+        <button onclick="addProduct (productContainer)" class=" btn btn-outline-info ">add Product</button>
+    </div>
+
+    <div class="w-75 mx-auto py-3">
+        <table class=" table">
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Desc</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="tboody">
+                              
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

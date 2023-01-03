@@ -21,12 +21,18 @@
         <input type="text" class="my-2 form-control" id="productCategory">
 
         <label for="productDesc">productDesc</label>
-        <textarea type="text" class="my-2 form-control" id="productDesc"></textarea>
+        <textarea type="text" class=" form-control" id="productDesc"></textarea>
 
         <button onclick="addProduct (productContainer)" class=" btn btn-outline-info ">add Product</button>
+   
+        <div class=" w-75  m-auto py-1">
+            <label for="searchProducts"></label>
+            <input onkeyup="searchProduct(this.value)" type="search" class="my-2 form-control" placeholder="search..." id="searchProducts">
+        </div>
+    
     </div>
-
-    <div class="w-75 mx-auto py-3">
+    
+    <div class="w-75 mx-auto ">
         <table class=" table">
             <thead>
                 <th>index</th>

@@ -43,12 +43,12 @@ function displayProduct(produtsList) {
 
 }
 
-// function clearForm() {
-//     productNameInput.value = '';
-//     productPriceInput.value = '';
-//     productCategoryInput.value = '';
-//     productDescInput.value = '';
-// }
+function clearForm() {
+    productNameInput.value = '';
+    productPriceInput.value = '';
+    productCategoryInput.value = '';
+    productDescInput.value = '';
+}
 
 function deleteProduct(x) {
     productContainer.splice(x, 1);
